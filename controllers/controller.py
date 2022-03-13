@@ -10,3 +10,7 @@ def choices(choice_1, choice_2):
     this_game = Game(player_1, player_2)
     winner = Game.play_game(this_game)
     return render_template("index.html", name_1=player_1.name, name_2=player_2.name, choice_1=choice_1, choice_2=choice_2, winner=winner)
+
+@app.route('/welcome')
+def welcome():
+    return render_template("welcome.html")
