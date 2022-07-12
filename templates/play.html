@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+ 
+<h1>Rock Paper Scissors</h1>
+
+<form actions="/index" method="POST">
+    <label for="username">Your Name</label>
+    <input type="text" id="username" name="username">
+    <label for="move">Select A Move</label>
+    <select id="move" name="move">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
